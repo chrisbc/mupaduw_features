@@ -5,6 +5,8 @@ Story:
 As a musician I want to be able to select the scale so that my 
 contact with the grid are translated to sensible notes.
 
+Note: There is only one vertical row
+
 ref https://trello.com/c/ysU4W2YS
 
 Background:
@@ -24,7 +26,7 @@ Scenario: The grid has a two octave scale on the horizontal axis
 
 Scenario: Notes are arranged to fit the chosen scale
 	Given I choose the scale of C major
-	Then any note in the grid will belong to the scale of Middle-C 
+	Then any note in the grid will belong to the scale of C major 
 	And the notes are ordered from left to right in ascending pitch
 
 
